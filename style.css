@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 100vw;
+    background: linear-gradient(to right , rgb(30, 29, 29), rgb(41, 40, 40));
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    height: 1000vh;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: -5px;
+    background: linear-gradient(to right , rgb(30, 29, 29), rgb(41, 40, 40));
+}
+.navbar{
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.navbar a{
+    color: gold;
+    text-decoration: none;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.navleft, .navright{
+    display: flex;
+    align-items: center;
+}
+.navmiddle h3{
+    color: gold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navleft ul, .navright ul{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+}
+
+#home{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.homesec{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.homesec .hleft{
+    height: 100%;
+    width: 50%;
+    padding-left:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.homesec .hleft h2{
+    font-size: 4rem;
+    color: gold;
+}
+.homesec .hleft p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #ffffffaf;
+}
+.homesec .hleft button{
+    width: 25%;
+    background-color:gold;
+    color: #000000;
+    font-family: "Jersey 20", sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 0.4rem;
+    cursor: pointer;
+    border:none;
+    border-radius: 0px;
+}
+.homesec .hright{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.homesec .hright img{
+    width: 25vw;
+    box-shadow: inset 0px 1px 20px 20px #00000070;
+}
+
+#about{
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow:0px 1px 20px 20px #00000070;
+    border-top: 100px solid rgb(30, 29, 29);
+}
+
+.aboutsec{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutsec .aleft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px dotted black;
+    background: antiquewhite;
+}
+.aboutsec .aleft img{
+    width: 20vw;
+    padding: 1rem;
+}
+.aboutsec .aright{
+    width: 50%;
+    padding: 0 5rem;
+}
+.aboutsec .aright h2{
+    font-size: 2rem;
+    color: gold;
+}
+.aboutsec .aright p{
+    margin:1rem 0;
+}
+.aboutsec .aright li{
+    line-height: 1.3rem;
+    color: #ffcc00;
+}
+.aboutsec .aright li span{
+    color: #000000;
+}
+
+#testimonial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.testimonialsec{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonialsec .timgs{
+    width: 100%;
+    height: 100%;
+}
+.testimonialsec .timgs img{
+    width: 3rem;  
+    height: 3rem;  
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: -10;
+    filter: brightness(0.5);
+}
+.testimonialsec .timgs img:nth-child(1){
+    position: relative;
+    top: 3rem;
+    left: 20%;
+    transform: rotate(-10deg);
+}
+.testimonialsec .timgs img:nth-child(2){
+    position: relative;
+    top: 15rem;
+    left: 15%;
+    transform: rotate(-10deg);
+}
+.testimonialsec .timgs img:nth-child(3){
+    position: relative;
+    top: 10rem;
+    left: 70%;
+    transform: rotate(10deg);
+}
+.testimonialsec .ttop{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonialsec .ttop img{
+    margin-bottom: 1rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonialsec .tmiddle{
+    margin: 1rem 0;
+    color: gold;
+    filter: brightness(0.7);
+}
+.testimonialsec .tbottom{
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.featuresec{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.featuresec .fleft{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.featuresec .fleft img{
+    width: 20vw;
+}
+.featuresec .fright{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.featuresec .fright h1{
+    font-size: 2rem;
+    color: gold;
+}
+.featuresec .fright p{
+    margin: 0.5rem 0;
+}
+.featuresec .fright p:nth-child(2){
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red;
+}
+.featuresec .fright span{
+    color: rgb(161, 157, 157);
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.fright li{
+    color: goldenrod;
+    line-height: 1.2rem;
+}
+.fright button{
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: goldenrod;
+    font-family: "Jersey 20", sans-serif;
+    cursor: pointer;
+}
+
+.productsec{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.productsec .productelem{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productsec .productelem img{
+    width: 15vw;
+    height: 25vh;
+    object-fit: contain;
+}
