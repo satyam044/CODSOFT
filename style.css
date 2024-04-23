@@ -10,9 +10,18 @@ body{
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-    height: 1000vh;
 }
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    background-color: gold;
+}
+
 
 nav{
     width: 100%;
@@ -43,6 +52,9 @@ nav{
     color: gold;
     font-size: 2rem;
     cursor: pointer;
+}
+.navmiddle a{
+    margin: 0;
 }
 .navleft ul, .navright ul{
     display: flex;
@@ -81,7 +93,7 @@ nav{
     color: #ffffffaf;
 }
 .homesec .hleft button{
-    width: 25%;
+    width: unset;
     background-color:gold;
     color: #000000;
     font-family: "Jersey 20", sans-serif;
@@ -219,13 +231,12 @@ nav{
 
 .featuresec{
     width: 100%;
-    height: 80vh;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     background-color: #fff;
 }
 .featuresec .fleft{
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -271,19 +282,182 @@ nav{
 }
 
 .productsec{
-    background-color: #fff;
+    background-color: #d2cfcf;
     width: 100%;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
+    border-top: 70px solid rgb(255, 255, 255);
+    border-bottom: 100px solid rgb(30, 29, 29);
+    box-shadow: 0px 50px 20px 0px #00000070;
 }
 .productsec .productelem{
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    box-shadow:0px 0px 20px 4px #00000070;
+    background-color: #fff;
 }
 .productsec .productelem img{
     width: 15vw;
     height: 25vh;
     object-fit: contain;
+    background-color: #000000;
+    padding: 1rem;
+}
+.productsec .productelem h2{
+    margin: 0.3rem 0;
+    color: red;
+}
+.productsec .productelem button{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: "Jersey 20", sans-serif;
+    background-color: goldenrod;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.contactsec{
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+.contactsec .cinputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.contactsec .cinputs input,.contactsec .cinputs textarea{
+    width: 20rem;
+    background-color:gold;
+    border: 2px solid black;
+    padding: 0.5rem;
+    outline: none;
+    margin: 0.3rem 0;
+}
+.contactsec .cinputs input::placeholder,.contactsec .cinputs textarea::placeholder{
+    color: #000000;
+}
+.contactsec .cinputs textarea::-webkit-resizer{
+    display: none;
+}
+.contactsec .cinputs button{
+    width: 20rem;
+    background-color: goldenrod;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: "Jersey 20", sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30, 29, 29);
+    border-top: 1px solid white;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width:1024px) {
+    .navbar{
+        width: 100%;
+    }
+    .homesec{
+        width: unset;
+    }
+}
+@media screen and (max-width:850px){
+    .navbar{
+        font-size:1.3rem;
+    }
+    .navmiddle h3{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar{
+        font-size:3vw;
+        justify-content: center;
+    }
+    .navmiddle{
+        display: none;
+    }
+    .homesec{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .homesec .hleft{
+        display: ruby;
+        text-align: center;
+        width: 90%;
+        padding: 0;
+    }
+    .homesec .hright img{
+        width: 10rem;
+    }
+    .aboutsec{
+        flex-direction: column;
+    }
+    .aboutsec .aleft{
+        border: none;
+    }
+    .aboutsec .aright{
+        width: 90%;
+        padding: 0;
+    }
+    .aboutsec .aright h2{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .aboutsec .aright p{
+        text-align: center;
+    }
+    .testimonialsec .timgs{
+        display: none;
+    }
+    .testimonialsec .tbottom{
+        width: 90%;
+    }
+    .featuresec{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .featuresec .fleft img{
+        width: 10rem;
+    }
+    .featuresec .fright{
+        margin-top: 1rem;
+        width: 80%;
+        align-items: center;
+    }
+    .fright li{
+        list-style: none;
+    }
+    .productsec{
+        flex-wrap: wrap;
+    }
+    .productelem{
+        width: 100%;
+        box-shadow: none !important;
+        border: 2px solid black;
+    }
+    .productelem img{
+        width: unset !important;
+    }
+    .contactsec .cinputs input,.contactsec .cinputs textarea{
+        width: 90vw;
+    }
 }
