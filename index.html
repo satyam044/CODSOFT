@@ -28,10 +28,35 @@
                 </ul>
             </div>
             <div class="navmiddle">
-                <a href=""><h3>AuricTime</h3></a>
+                <a href="">
+                    <h3>AuricTime</h3>
+                </a>
             </div>
             <div class="navright">
                 <ul>
+                    <a href="#features">
+                        <li>Features</li>
+                    </a>
+                    <a href="#products">
+                        <li>Products</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <div class="hamburgerelem" id="hamburgerelem">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#testimonial">
+                        <li>Testimonial</li>
+                    </a>
                     <a href="#features">
                         <li>Features</li>
                     </a>
@@ -180,6 +205,23 @@
     <footer>
         <span>© 2024 AuricTime. All rights reserved.</span>
     </footer>
+
+
+    <script>
+        const Hamburger = document.getElementById("hamburger")
+        const hamburgerelem = document.getElementById("hamburgerelem")
+        let clicked = false;
+
+        Hamburger.addEventListener("click", () => {
+            if (!clicked) {
+                hamburgerelem.style.display = "flex"
+                clicked = true;
+            } else {
+                hamburgerelem.style.display = "none"
+                clicked = false;
+            }
+        })
+    </script>
 </body>
 
 </html>

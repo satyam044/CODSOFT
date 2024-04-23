@@ -38,6 +38,19 @@ nav{
     justify-content: space-between;
     font-size: 1.5rem;
 }
+.navbar i,.navbar .hamburgerelem{
+    display: none;
+    color: #fff;
+}
+.navbar .hamburgerelem{
+    width: 80%;
+    padding: 1rem;
+    position: absolute;
+    background-color: rgb(41, 40, 40);
+    top: 4rem;
+    z-index: 100;
+    justify-content: center;
+}
 .navbar a{
     color: gold;
     text-decoration: none;
@@ -382,17 +395,20 @@ footer{
     .navbar{
         font-size:1.3rem;
     }
-    .navmiddle h3{
-        font-size: 4vw;
-    }
 }
 @media screen and (max-width:768px){
     .navbar{
-        font-size:3vw;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
-    .navmiddle{
+    .navbar .navleft{
         display: none;
+    }
+    .navbar .navright{
+        display: none;
+    }
+    .navbar i{
+        display: block;
     }
     .homesec{
         flex-direction: column-reverse;
