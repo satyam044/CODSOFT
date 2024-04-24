@@ -18,10 +18,12 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    cursor: pointer;
     background-color: gold;
 }
-
+body::-webkit-scrollbar-thumb:hover{
+    background-color:goldenrod;
+}
 
 nav{
     width: 100%;
@@ -30,6 +32,7 @@ nav{
     position: sticky;
     top: -5px;
     background: linear-gradient(to right , rgb(30, 29, 29), rgb(41, 40, 40));
+    z-index: 1000;
 }
 .navbar{
     padding: 1rem;
@@ -57,6 +60,10 @@ nav{
     margin: 0 1rem;
     cursor: pointer;
 }
+.navbar a:hover{
+    color: #ffcc0098;
+    transform: scale(1.05);
+}
 .navleft, .navright{
     display: flex;
     align-items: center;
@@ -65,6 +72,10 @@ nav{
     color: gold;
     font-size: 2rem;
     cursor: pointer;
+}
+.navmiddle h3:hover{
+    color: #ffcc0098;
+    transform: scale(1.1);
 }
 .navmiddle a{
     margin: 0;
@@ -117,6 +128,10 @@ nav{
     border:none;
     border-radius: 0px;
 }
+.homesec .hleft button:hover{
+    background-color: #ffcc0098;
+    transform: scale(1.05);
+}
 .homesec .hright{
     height: 100%;
     display: flex;
@@ -152,6 +167,11 @@ nav{
 .aboutsec .aleft img{
     width: 20vw;
     padding: 1rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.aboutsec .aleft img:hover{
+    transform: scale(1.05);
 }
 .aboutsec .aright{
     width: 50%;
@@ -195,8 +215,8 @@ nav{
     height: 3rem;  
     border-radius: 50%;
     object-fit: cover;
-    z-index: -10;
     filter: brightness(0.5);
+    cursor: pointer;
 }
 .testimonialsec .timgs img:nth-child(1){
     position: relative;
@@ -216,6 +236,10 @@ nav{
     left: 70%;
     transform: rotate(10deg);
 }
+.testimonialsec .timgs img:hover{
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
 .testimonialsec .ttop{
     height: 100%;
     width: 100%;
@@ -230,11 +254,23 @@ nav{
     width: 10rem;
     border-radius: 50%;
     object-fit: cover;
+    transition: all 0.3s ease-in;
+}
+.testimonialsec .ttop img:hover{
+    transform: scale(1.1);
 }
 .testimonialsec .tmiddle{
     margin: 1rem 0;
     color: gold;
     filter: brightness(0.7);
+    cursor: pointer;
+}
+.testimonialsec .tmiddle:hover{
+    transform: scale(1.1);
+}
+.testimonialsec .tmiddle i:hover{
+    color: yellow;
+    transform: scale(1.1);
 }
 .testimonialsec .tbottom{
     width: 40%;
@@ -255,6 +291,11 @@ nav{
 }
 .featuresec .fleft img{
     width: 20vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.featuresec .fleft img:hover{
+    transform: scale(1.1);
 }
 .featuresec .fright{
     height: 100%;
@@ -293,6 +334,10 @@ nav{
     font-family: "Jersey 20", sans-serif;
     cursor: pointer;
 }
+.fright button:hover{
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
 
 .productsec{
     background-color: #d2cfcf;
@@ -319,6 +364,10 @@ nav{
     object-fit: contain;
     background-color: #000000;
     padding: 1rem;
+    transition: all 0.3s ease-in;
+}
+.productsec .productelem img:hover{
+    transform: scale(1.05);
 }
 .productsec .productelem h2{
     margin: 0.3rem 0;
@@ -331,6 +380,10 @@ nav{
     background-color: goldenrod;
     border: 2px solid black;
     cursor: pointer;
+}
+.productsec .productelem button:hover{
+    background-color: #ffcc00;
+    transform: scale(1.05);
 }
 
 .contactsec{
@@ -370,6 +423,11 @@ nav{
     border: 2px solid black;
     border-radius: 10px;
     outline: none;
+    cursor: pointer;
+}
+.contactsec .cinputs button:hover{
+    background-color: #ffcc00;
+    transform: scale(1.01);
 }
 
 footer{
